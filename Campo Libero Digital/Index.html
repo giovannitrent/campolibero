@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">
+      <img src="Assets/Logo.svg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about" id="about-link">Chi Siamo</a></li>
+        <li><a href="#services" id="services-link">Servizi</a></li>
+        <li><a href="#contact" class="button">Contattaci</a></li>
+      </ul>
+    </nav>
+  </header>
+
+      <section class="hero">
+        <video autoplay loop muted>
+          <source src="Assets/Campo.mp4" type="video/mp4">
+          <!-- Aggiungi altri formati video per la compatibilità -->
+        </video>
+        <div class="hero-content">
+          <h1>CAMPO <BR> LIBERO <BR> DIGITAL</h1>
+          <h2>VIBRAZIONI E LEGAMI</h2>
+        </div>
+      </section>
+
+
+      
+      <section class="section" id="about"> 
+        <div class="video-background">
+          <video autoplay loop muted>
+            <source src="Assets/orange background.mp4" type="video/mp4">
+            <!-- Aggiungi altri formati video per la compatibilità -->
+          </video>
+        </div>
+        <div class="content">
+          <div class="text">
+            <h2>Perché Campo Libero Digital</h2>
+            <p>Una nuova realtà digitale all'insegna di energica passione, creatività e professionalità</p>
+          </div>
+          <div class="image">
+            <img src="Assets/about-img-min.png" alt="Descrizione immagine">
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="services-section" class="section scroll-reveal-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>DI COSA CI OCCUPIAMO?</h2>
+            <p>In Campo Libero Digital lavoriamo per costruire la miglior versione del tuo brand.</p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img src="Assets/1.jpg" alt="Immagine 1">
+              <h3>Titolo 1</h3>
+              <p>Sottotitolo 1</p>
+            </div>
+            <div class="card">
+              <img src="Assets/2.jpg" alt="Immagine 2">
+              <h3>Titolo 2</h3>
+              <p>Sottotitolo 2</p>
+            </div>
+            <div class="card">
+              <img src="Assets/3.jpg" alt="Immagine 3">
+              <h3>Titolo 3</h3>
+              <p>Sottotitolo 3</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img src="Assets/4.jpg" alt="Immagine 4">
+              <h3>Titolo 4</h3>
+              <p>Sottotitolo 4</p>
+            </div>
+            <div class="card">
+              <img src="Assets/5.jpg" alt="Immagine 5">
+              <h3>Titolo 5</h3>
+              <p>Sottotitolo 5</p>
+            </div>
+            <div class="card">
+              <img src="Assets/6.jpg" alt="Immagine 6">
+              <h3>Titolo 6</h3>
+              <p>Sottotitolo 6</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-container">
+            <a href="#contact" class="contact-button">Contattaci <i class="fas fa-arrow-right"></i></a>
+          </div>
+          
+      </section>
+      
+      <div class="scroll-container">
+        <div class="scroll-text">
+          <span>CALMA |</span>
+          <span>CREATIVITÀ |</span>
+          <span>PROFONDITÀ |</span>
+          <span>ARMONIA |</span>
+          <span>CALMA |</span>
+          <span>CREATIVITÀ |</span>
+          <span>PROFONDITÀ |</span>
+          <span>ARMONIA |</span>
+        </div>
+      </div>
+
+      <section class="white-section">
+        <div class="container">
+          <div class="box">
+            <h2 class="box-title">OUR TEAM</h2>
+            <h3 class="box-subtitle">Siamo sempre alla ricerca di menti brillanti 
+                e talenti innovativi per unire le nostre forze e creare progetti straordinari 
+                insieme!</h3>
+            <button class="box-button">CONTATTACI</button>
+          </div>
+          <div class="box">
+            <img src="Assets/Group 24.jpg" alt="Foto">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="cta-section">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Let's Do Great Things Together</h2>
+        
+            <a href="#" class="cta-button">SENTIAMOCI! <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="cta-image">
+            <img src="Assets/lemon.png" alt="CTA Image" class="rotating-image">
+
+          </div>
+        </div>
+      </section>
+      
+    
+      <script src="js/scrollreveal.js"></script>
+      <script src="js/main.js"></script>
+    
+
+      <script>
+         ScrollReveal().reveal('.text', { delay: 1000, distance: '50px', origin: 'bottom' });
+         ScrollReveal().reveal('.title', { delay: 1000, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('.card', { delay: 1000, distance: '20px', origin: 'right' });
+    ScrollReveal().reveal('.box', { delay: 1000, distance: '50px', origin: 'right' });
+    ScrollReveal().reveal('.cta-text', { delay: 1000, distance: '50px', origin: 'left' });
+    ScrollReveal().reveal('.cta-image', { delay: 1000, distance: '50px', origin: 'right' });
+      </script>
+
+
+<script>
+  // Seleziona l'elemento dell'immagine
+  const rotatingImage = document.querySelector('.rotating-image');
+
+  // Imposta un angolo di rotazione iniziale
+  let rotationAngle = 0;
+
+  // Funzione per animare l'immagine all'infinito
+  function rotateImage() {
+    // Incrementa l'angolo di rotazione
+    rotationAngle += 1;
+
+    // Applica la trasformazione CSS per la rotazione
+    rotatingImage.style.transform = `rotate(${rotationAngle}deg)`;
+
+    // Richiama la funzione per l'animazione al frame successivo
+    requestAnimationFrame(rotateImage);
+  }
+
+  // Avvia l'animazione dell'immagine
+  rotateImage();
+
+
+    // Inizializza ScrollReveal
+    ScrollReveal().reveal('.scroll-reveal-section', {
+    delay: 200,  // Ritardo di 200ms prima che l'animazione inizi
+    duration: 1000,  // Durata dell'animazione in millisecondi
+    distance: '20px',  // Distanza di spostamento degli elementi
+    origin: 'bottom',  // Punto di origine dell'animazione
+    easing: 'ease-out',  // Funzione di easing
+    reset: true  // Ripeti l'animazione ogni volta che l'elemento viene visualizzato
+  });
+</script>
+</script>
+</body>
+</html>
